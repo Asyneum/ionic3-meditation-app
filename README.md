@@ -1,5 +1,16 @@
 # Ionic Meditation App
 
+## Requirements
+
+Let us setup our dev environment and say hello world to ionic 3, firebase and our uploadcare configuration.
+
+- Ionic 3 or 4
+- Firebase
+- Uploadcare
+- Node.js
+
+Uploadcare docs: https://uploadcare.com/docs/
+
 ## What is Ionic?
 Ionic makes it easy to build high-performance mobile and Progressive Web Apps (or PWAs) that look and feel beautiful on any platform or device.
 > Ionic’s open source Framework and developer-friendly tools and services power apps for some of the world’s best-known brands - from highly successful consumer apps like Sworkit, Untappd and Dow Jones MarketWatch, to mission-critical apps supporting Nationwide, Amtrak, and NASA.
@@ -22,15 +33,5 @@ Ionic makes it easy to build high-performance mobile and Progressive Web Apps (o
 - or
 
 - ```sudo npm update -g cordova ionic```
-
-## Requirements
-
-Let us setup our dev environment and say hello world to ionic 3, firebase and our uploadcare configuration.
-
-- Ionic 3 or 4
-- Firebase
-- Uploadcare
-
-Uploadcare docs: https://uploadcare.com/docs/
 
 ###### enjoy!
