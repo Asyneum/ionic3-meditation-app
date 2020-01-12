@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>{{meditasyon.baslik}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding class="list-page">
+
+    <div *ngFor="let oge of data">
+        <img src="http://mistikyol.com/mistikmobil/thumbnails/{{oge.thumbnail}}"/>
+
+        <ion-range min="0" max="{{sure}}" [ngModel]="anlik" color="danger">
+            <ion-icon range-left small>{{anlikSure}}</ion-icon>
+            <ion-icon range-right small>{{toplamSure}}</ion-icon>
+        </ion-range>
+
+        <button *ngIf="isPlay; else templateButton" class="playButton" ion-button (click)="playPause()" color="danger" icon-only large>
+            <ion-icon name="pause"></ion-icon>
+        </button>
+        <ng-template #templateButton>
+            <button class="playButton" ion-button (click)="playPause()" color="danger" icon-only large>
+                <ion-icon name="play"></ion-icon>
+            </button>
+        </ng-template>
+
+        <button *ngIf="oge.favori == '0'; else digerBtn" (click)="favorilereEkle(oge.sira)" ion-button block icon-start="" color="danger" large>
+            <ion-icon name="star"></ion-icon>
+            FAVORİLERE EKLE
+        </button>
+        <ng-template #digerBtn>
+            <button ion-button block (click)="favorilerdenCikar(oge.sira)" icon-start color="danger" outline large>
+                <ion-icon name="star"></ion-icon>
+                FAVORİLERDEN ÇIKAR
+            </button>
+        </ng-template>
+    </div>
+</ion-content>

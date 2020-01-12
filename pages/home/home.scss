@@ -1,0 +1,19 @@
+page-home {
+
+  ion-card {
+    height: 300px;
+  }
+
+  ion-card img {
+    height: 200px;
+  }
+
+  .uc-satir {
+    display: block;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.6em;
+    line-height: 1.2em;
+  }
+}
